@@ -1,12 +1,12 @@
-import { Options } from 'sequelize';
+import { Options } from 'sequelize'
 
 const config: Options = {
-  database: 'mydatabase',
-  username: 'root',
+  database: 'mydb',
+  username: 'postgres',
   password: '1234',
   host: 'localhost',
   port: 5432,
-  dialect: 'postgres',
-};
+  dialect: 'postgres'
+}
 
-export default config;
+module.exports = config
