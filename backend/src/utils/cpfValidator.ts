@@ -1,8 +1,4 @@
 function isValidCPF(value: string): boolean {
-  if (typeof value !== 'string') {
-    return false
-  }
-
   value = value.replace(/[^\d]+/g, '')
 
   if (value.length !== 11 || !(value.match(/(\d)\1{10}/) == null)) {

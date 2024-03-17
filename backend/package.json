@@ -8,7 +8,10 @@
     "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
     "predev": "npm run build && npm run db:reset",
     "dev": "nodemon --watch \"src/**\" src/server.ts",
-    "test:unit": "jest tests/unit --verbose"
+    "test": "npm run test:unit && npm run test:integration",
+    "test:unit": "jest tests/unit --verbose",
+    "test:integration": "jest tests/integration --verbose",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [],
   "author": "Rafael Santos",

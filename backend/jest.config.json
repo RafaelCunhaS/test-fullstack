@@ -1,9 +1,10 @@
 {
   "moduleFileExtensions": ["js", "json", "ts"],
-  "rootDir": "./tests",
   "testEnvironment": "node",
   "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
-  }
+  },
+  "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/server.ts", "!src/database/**"],
+  "coverageReporters": ["lcov", "text"]
 }

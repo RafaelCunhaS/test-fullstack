@@ -6,7 +6,8 @@ const config: Options = {
   password: '1234',
   host: 'localhost',
   port: 5432,
-  dialect: 'postgres'
+  dialect: 'postgres',
+  logging: false
 }
 
 module.exports = config
