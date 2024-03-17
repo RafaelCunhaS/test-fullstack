@@ -1,0 +1,15 @@
+@import '../../styles/baseColors.scss';
+
+.header {
+  width: 100%;
+  background-color: #{$background-color};
+  display: flex;
+  justify-content: center;
+
+  img {
+    max-width: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 0.8rem;
+  }
+}
+
