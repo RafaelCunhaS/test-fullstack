@@ -1,0 +1,21 @@
+@import '../../styles/baseColors.scss';
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding-bottom: 0.4rem;
+  padding-top: 0.4rem;
+  margin-top: auto;
+  width: 100%;
+
+  svg {
+    vertical-align: sub;
+    color: #{$dark-color}
+  }
+
+  svg:hover {
+    transform: scale(1.1);
+    transition: 0.4s;
+  }
+}
