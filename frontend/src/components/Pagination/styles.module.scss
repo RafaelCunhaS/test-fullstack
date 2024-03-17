@@ -1,0 +1,29 @@
+@import '../../styles/baseColors.scss';
+
+.container {
+  display: flex;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  color: #{$light-color};
+  width: 30%;
+}
+
+.pageButton {
+  margin-left: 0.625rem;
+  margin-right: 0.625rem;
+  border-radius: 0.375rem;
+  border-width: 2px;
+  border-color: #c2b4b4;
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+  color: #615f5f;
+  line-height: 1.5rem;
+  font-weight: 600;
+  background-color: #c2b4b4;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
