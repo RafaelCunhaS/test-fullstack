@@ -1,0 +1,26 @@
+@import "../../styles/baseColors.scss";
+
+.container {
+  margin: 0 5rem 3rem 5rem;
+}
+
+.subContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+}
+
+.subtext {
+  margin-bottom: 3rem;
+  h3 {
+    margin-bottom: 0.6rem;
+    color: #{$text-color};
+  }
+  p {
+    color: #{$heading-color};
+  }
+}
+
+.text {
+   color: #{$heading-color};
+}
