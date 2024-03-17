@@ -5,6 +5,6 @@
   "transform": {
     "^.+\\.(t|j)s$": "ts-jest"
   },
-  "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/server.ts", "!src/database/**"],
+  "collectCoverageFrom": ["src/**/*.{js,ts}", "!src/server.ts", "!src/database/**", "!tests/**/*"],
   "coverageReporters": ["lcov", "text"]
 }
