@@ -1,0 +1,11 @@
+@import '../../styles/baseColors.scss';
+
+.container { 
+  color: #{$text-color};
+  margin-top: 3rem;
+
+  span {
+    margin-right: 1rem;
+    vertical-align: sub;
+  }
+}
