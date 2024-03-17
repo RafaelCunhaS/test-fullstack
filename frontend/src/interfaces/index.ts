@@ -26,3 +26,9 @@ export interface IDataForm {
 export interface ClientProps {
   client: IDataForm
 }
+
+export interface PaginationProps {
+  totalPages: number
+  setCurrentPage: (page: number) => void
+  currentPage: number
+}
