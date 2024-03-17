@@ -1,7 +1,7 @@
 import { Model, DataTypes } from 'sequelize'
 import db from '.'
 
-class UserModel extends Model {
+class Client extends Model {
   public id!: number
   public name!: string
   public email!: string
@@ -12,7 +12,7 @@ class UserModel extends Model {
   public readonly updatedAt!: Date
 }
 
-UserModel.init(
+Client.init(
   {
     id: {
       type: DataTypes.INTEGER,
@@ -43,9 +43,9 @@ UserModel.init(
   },
   {
     sequelize: db,
-    modelName: 'User',
-    tableName: 'users'
+    modelName: 'Client',
+    tableName: 'clients'
   }
 )
 
-export default UserModel
+export default Client
