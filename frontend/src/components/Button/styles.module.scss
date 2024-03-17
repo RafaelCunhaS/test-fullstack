@@ -1,0 +1,25 @@
+@import '../../styles/baseColors.scss';
+
+.button {
+  width: 130px;
+  height: 40px;
+  border: none;
+  background-color: #{$button-primary};
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: background-color 0.3s;
+
+  svg {
+    margin-left: 0.6rem;
+  }
+
+  &:hover {
+    background-color: #{$button-hover};
+    color: #{$light-color};
+    cursor: pointer;
+  }
+}
