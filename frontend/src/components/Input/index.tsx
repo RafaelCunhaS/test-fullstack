@@ -38,7 +38,7 @@ const InputBase: ForwardRefRenderFunction<HTMLInputElement, ICustomInput> = (
       </div>
 
       {error && (
-        <div className={styles.error}>
+        <div className={styles.error} data-testid="errorText">
           <FiAlertCircle />
           <p>{error.message}</p>
         </div>
