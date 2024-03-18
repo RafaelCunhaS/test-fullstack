@@ -20,7 +20,7 @@ export async function createClient(dataForm: IDataForm) {
 export async function updateClient(id: string, dataForm: IDataForm) {
   try {
     const { status } = await api.put(`/clients/${id}`, dataForm)
-    if (status === 204) {
+    if (status === 200) {
       toast.success('Cliente atualizado com sucesso!')
     }
   } catch (error: unknown) {
