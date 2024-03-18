@@ -1,8 +1,6 @@
 # Teste Fullstack: Aplicativo de Gerenciamento de Clientes
 
-## Deploy do App na nuvem: [Deploy](http://18.216.84.173/)
-
-#### Protocolo HTTP, talvez seja preciso conceder permissão do browser
+## Deploy do App na nuvem: [Deploy](http://18.216.84.173/) (Protocolo HTTP, talvez seja preciso conceder permissão do browser)
 
 ### Ferramentas Frontend:
 
