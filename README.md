@@ -1,41 +1,75 @@
 # Teste Fullstack: Aplicativo de Gerenciamento de Clientes
 
-## Descrição:
+## Deploy do App na nuvem: [Deploy](http://18.216.84.173/)
 
-Neste desafio, você deverá desenvolver um aplicativo fullstack que permita aos usuários visualizar e criar clientes. O aplicativo consiste em duas partes: o frontend e o backend. O frontend será responsável pela interface do usuário e a comunicação com a API. O backend será responsável pelo armazenamento e gerenciamento dos dados dos clientes.
+#### Protocolo HTTP, talvez seja preciso conceder permissão do browser
 
-## Requisitos do Frontend:
+### Ferramentas Frontend:
 
-1. Exibir uma listagem de clientes contendo todas as informações conforme o layout fornecido.
-2. Permitir a criação de um novo cliente através de um formulário.
-3. Na tela de edição, fornecer alertas para o usuário em caso de dados inválidos.
-4. Realizar validação de CPF e telefone na tela de edição para garantir dados corretos e consistentes.
-5. Comunicar-se com a API para obter os dados dos clientes cadastrados.
+- [Vite](https://vitejs.dev/)
+- [React](https://pt-br.reactjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Yup](https://github.com/jquense/yup)
+- [React-Toastify](https://fkhadra.github.io/react-toastify/introduction)
+- [React Icons](https://react-icons.github.io/react-icons/)
+- [React-hook-form](https://www.react-hook-form.com/)
+- [Sass](https://sass-lang.com/)
 
-## Requisitos do Backend:
+### Ferramentas de Teste Frontend:
 
-Criar uma API que ofereça endpoints para:
+- [Vitest](https://vitest.dev/)
+- [React Testing Library](https://testing-library.com/docs/react-testing-library/intro/)
 
-1. Obter a listagem de clientes cadastrados.
-2. Cadastrar um novo cliente com informações válidas.
-3. Atualizar informações de cliente existente.
-4. Armazenar os dados do cliente de forma persistente, com sugestão de uso do SQLite para essa finalidade.
+### Ferramentas Backend:
 
-## Requisitos de Qualidade de Código:
+- [TypeScript](https://www.typescriptlang.org/)
+- [Express](https://pactumjs.github.io/)
+- [Postgres](https://www.postgresql.org/)
+- [Sequelize](https://sequelize.org/)
+- [Zod](https://zod.dev/)
 
-Escreva um código limpo, legível e bem organizado.
-Adote boas práticas de desenvolvimento e arquitetura.
+### Ferramentas de Teste Backend(Unitários e Integração):
 
-## Itens Desejáveis (opcional):
+- [Jest](https://jestjs.io/pt-BR/)
+- [Supertest](https://www.npmjs.com/package/supertest)
 
-- Testes unitários
-- Bibliotecas ou frameworks adicionais
+### Endpoints Backend:
 
-## Telas:
+- Criar cliente => POST **/client**
+- Retornar um cliente => GET **/clients/:id**
+- Listar clientes com paginação => GET **/clients?page=0&size=5**
+- Atualizar cliente => PUT **/clients/:id**
 
-- [Tela Inicial](https://test-frontend-uolpp.web.app/assets/images/tela-inicial.jpg)
-- [Tela de Edição](https://test-frontend-uolpp.web.app/assets/images/tela-edicao.jpg)
+### Gerenciador de Containers:
 
-## Instruções Finais:
+- [Docker-compose](https://www.docker.com/)
 
-Após concluir o desafio, crie um pull request neste repositório com duas pastas separadas: uma contendo o projeto frontend e outra com o projeto backend, para que possamos avaliar seu trabalho. Boa sorte!
+### Deploy Cloud:
+
+- [AWS EC2](https://aws.amazon.com/pt/ec2/)
+
+## Rodar o projeto localmente:
+
+```bash
+    # Entre na pasta do backend
+    $ cd backend
+
+    # Instale as dependências
+    $ npm install
+
+    # Deixe rodando em plano de fundo
+    $ npm run dev
+
+    # Entre na pasta do frontend
+    $ cd ../frontend
+
+    # Instale as dependências
+    $ npm install
+
+    # Inicie o projeto
+    $ npm run dev
+```
+
+### O backend estará rodando na porta 3001
+
+### O app estará rodando em seu localhost na porta [5173](http://localhost:5173)
