@@ -51,7 +51,11 @@ export default function ClientCard({ client }: ClientProps) {
         </span>
         {client.status}
       </p>
-      <Button title="Editar" onClick={() => navigate(`/update/${client.id}`)} />
+      <Button
+        title="Editar"
+        data-testid={`edit-button-${client.id}`}
+        onClick={() => navigate(`/update/${client.id}`)}
+      />
     </li>
   )
 }
