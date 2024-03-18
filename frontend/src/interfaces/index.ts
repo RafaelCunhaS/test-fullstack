@@ -32,3 +32,8 @@ export interface PaginationProps {
   setCurrentPage: (page: number) => void
   currentPage: number
 }
+
+export interface ClientFormProps {
+  onSubmit: (data: IDataForm) => void
+  clientData?: IDataForm
+}
