@@ -2,6 +2,10 @@
 
 ## Deploy do App na nuvem: [Deploy](http://18.216.84.173/) (Protocolo HTTP, talvez seja preciso conceder permissão do browser)
 
+### Deploy Cloud:
+
+- [AWS EC2](https://aws.amazon.com/pt/ec2/)
+
 ### Ferramentas Frontend:
 
 - [Vite](https://vitejs.dev/)
@@ -31,6 +35,8 @@
 - [Jest](https://jestjs.io/pt-BR/)
 - [Supertest](https://www.npmjs.com/package/supertest)
 
+<img src="./cobertura-teste.png" alt="cobertura-teste" width="500"/>
+
 ### Endpoints Backend:
 
 - Criar cliente => POST **/client**
@@ -42,10 +48,6 @@
 
 - [Docker-compose](https://www.docker.com/)
 
-### Deploy Cloud:
-
-- [AWS EC2](https://aws.amazon.com/pt/ec2/)
-
 ## Rodar o projeto localmente:
 
 ```bash
@@ -54,6 +56,9 @@
 
     # Instale as dependências
     $ npm install
+
+    # Suba o container do banco de dados
+    $ docker compose up -d
 
     # Deixe rodando em plano de fundo
     $ npm run dev
@@ -66,6 +71,31 @@
 
     # Inicie o projeto
     $ npm run dev
+```
+
+## Rodar testes do projeto:
+
+```bash
+    # No backend
+    $ cd backend
+
+    # Testes unitários
+    $ npm run test:unit
+
+    # Testes de integração
+    $ npm run test:integration
+
+    # Todos os testes
+    $ npm run test
+
+    # Geração da cobertura dos testes
+    $ npm run test:coverage
+
+    # No frontend
+    $ cd frontend
+
+    # Rode os testes
+    $ npm run test
 ```
 
 ### O backend estará rodando na porta 3001
